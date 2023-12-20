@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+}
+
+#navbar{
+  padding-right: 10px;
+  display: flex;
+  width: 100%; // 100%? 
+ 
+  background-color: blue;
+ 
+  ul {
+  padding-right: 10px; // ? why at 10px nothing is happening? 
+  align-items: center;
+  flex-grow: 1;
+  background-color: black;
+  justify-content: right;
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+}
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  padding: 3em;
+  p {
+    padding: 30px;
+  }
+  img {
+     width: 600px;
+     padding: 30px;
+  }
+}
+
