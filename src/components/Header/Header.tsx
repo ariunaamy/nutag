@@ -10,8 +10,8 @@ const Header = () => {
           <ul>
             <li><a href="#">why help?</a></li>
             <li><a href="#">Read</a></li>
-            <li><a href="#">Donate</a></li>
             <li><a href="#">About</a></li>
+            <li className="donate_button"><a href="#">Donate</a></li>
           </ul>
         </nav>
     </header>

@@ -7,14 +7,13 @@
 header {
     background-color: $primary-color;
     color: $secondary-color;
+    font-family: $font-base;
     width: 100vw;
     position: fixed;
     z-index: 1000;
+    padding:  16px 0;
+    top: 0;
 
-    
-    color: $secondary-color;
-    height: 6em;
-    
     @include flex-center;
     .flag {
       margin: auto;
@@ -36,7 +35,7 @@ header {
     }
     h1 { 
       padding-left: 1em;
-      font-size: 17px;
+      font-size: 1.3em;
       flex: 1 1 0;
       
 
@@ -63,6 +62,18 @@ header {
               color: $secondary-color;
             }
           }
+        }
+
+        .donate_button {
+          margin: 0.5em;
+          padding: 12px 16px;
+          font-size: 17px;
+          font-weight: bold;
+          border-radius: 50px;
+          background-color: yellow;
+          border: none;
+          height: 50px;
+
         }
 
 

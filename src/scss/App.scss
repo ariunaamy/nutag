@@ -1,9 +1,9 @@
 @import "../styles/variables";
 
 body {
-  background-color: $primary-color;
   margin: 0;
-  font-family: $font-stack;
+  width: 100vw;
+  font-family: $font-header;
   color: rgb(66, 66, 66);
   ul {
     list-style-type: none;
@@ -16,39 +16,3 @@ body {
 }
 
 
-
-
-.call_to_action {
-  button {
-    margin: 0.5em;
-    color: rgb(66, 66, 66);
-    padding: 12px 16px;
-    font-size: 17px;
-    font-weight: bold;
-    border-radius: 50px;
-  } 
-
-  .first {
-    background-color: yellow;
-    border: none;
-    height: 50px;
-  }
-
-  .second {
-    background: none;
-    border: 1.5px solid  rgb(107, 107, 107);
-  }
-  .second:hover {
-    background-color: yellow;
-    border: none;
-    height: 50px;
-  }
-
- 
-}
-
-#resettlement {
-  p {
-    padding: 10em 25em;
-  }
-}

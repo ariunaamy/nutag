@@ -2,50 +2,110 @@
 @import "../../styles/variables";
 
 main {
-    display: flex;
     flex-direction: row;
+    margin-top: 90px;
     width: 100%;
     overflow: hidden;
 
-    @media (max-width: 479px) {
+    @media (max-width: 987px) {
      flex-direction: column;
-     background-color: rgb(196, 228, 255);
+     background-color: red;
+     height: 100vw;
+     
+     .hero {
+        order: -1;
+        margin-left: 3rem;
+        flex: 0;
+        
+     }
+     .image-wrapper {
+        flex: 1; 
+        width: 100%;
+        padding: 0;
       // Conditional styles here for width <= 479px
     }
+}
 
     @include flex-center;
 
     .image-wrapper {
-        width: 50%;             /* Example width */
-        margin: 0 auto;         /* Center the wrapper */
-        overflow: hidden;       /* Ensures nothing spills out */
-        position: relative;     /* For positioning overlays if needed */
+        padding-left: 4rem;
+        width: 50%;  
+        height: auto;
+        margin: 0 auto;        
+        overflow: hidden;  
+        
+        img {
+            width: 100%;           
+            height: auto;           
+            display: block;         
+            object-fit: cover;      
+          }
+        
       }
       
-      .image-wrapper img {
-        width: 100%;            /* Make the image fill the wrapper */
-        height: auto;           /* Maintain aspect ratio */
-        display: block;         /* Remove any inline spacing */
-        object-fit: cover;      /* Ensures the image covers the area */
-      }
+      
       
   
     .hero {
-      margin: 0;
-     
-      padding: 3em;
+      flex: 1;
+      padding: 3rem;
       text-align: left;
       h1 {
+        color: rgb(27, 27, 204);
         margin-bottom: 0em;
-        font-size: 48px;
+        font-size: 3rem;
+        font-weight: 600;
       }
       ul {
         margin-top: 0em;
         font-style: italic;
-        padding-left: 0;
+        padding-left: 0px;
         font-size: 2em;
+      }
+      span {
+        background-color: $yellow;
+        padding: 0 1rem;
       }
     }
  
   }
+
+  .call_to_action {
+  button {
+    margin: 1rem;
+    margin-top: 1.5rem;
+    margin-left: 0;
+    color: rgb(66, 66, 66);
+    padding: 12px 16px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 50px;
+  } 
+
+  .first {
+    background-color: yellow;
+    border: none;
+    height: 50px;
+  }
+
+  .second {
+    background: none;
+    border: 1.5px solid  rgb(107, 107, 107);
+  }
+  .second:hover {
+    background-color: yellow;
+    border: none;
+    height: 50px;
+  }
+
+ 
+}
+
+// #resettlement {
+//   p {
+//     padding: 10em 25em;
+//   }
+// }
+
   
