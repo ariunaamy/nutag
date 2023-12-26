@@ -1,0 +1,51 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: hidden;
+
+    @media (max-width: 479px) {
+     flex-direction: column;
+     background-color: rgb(196, 228, 255);
+      // Conditional styles here for width <= 479px
+    }
+
+    @include flex-center;
+
+    .image-wrapper {
+        width: 50%;             /* Example width */
+        margin: 0 auto;         /* Center the wrapper */
+        overflow: hidden;       /* Ensures nothing spills out */
+        position: relative;     /* For positioning overlays if needed */
+      }
+      
+      .image-wrapper img {
+        width: 100%;            /* Make the image fill the wrapper */
+        height: auto;           /* Maintain aspect ratio */
+        display: block;         /* Remove any inline spacing */
+        object-fit: cover;      /* Ensures the image covers the area */
+      }
+      
+  
+    .hero {
+      margin: 0;
+     
+      padding: 3em;
+      text-align: left;
+      h1 {
+        margin-bottom: 0em;
+        font-size: 48px;
+      }
+      ul {
+        margin-top: 0em;
+        font-style: italic;
+        padding-left: 0;
+        font-size: 2em;
+      }
+    }
+ 
+  }
+  
