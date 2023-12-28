@@ -1,85 +1,70 @@
-
 @import "../../styles/mixins";
 @import "../../styles/variables";
 
-
-
 header {
-    background-color: $primary-color;
-    color: $secondary-color;
-    font-family: $font-base;
-    width: 100vw;
-    position: fixed;
-    z-index: 1000;
-    padding:  16px 0;
-    top: 0;
+  background-color: rgb(255, 255, 255);
+  color: #15156e;
+  font-family: $font-base;
+  top: 0;
+  width: 100vw;
+  position: fixed;
+  z-index: 1000;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+ 
+ 
+  
+  .logo {
+    margin-left: 3%;
+    font-size: 1.5rem;
+    font-weight: bold;
+   
+  }
 
-    @include flex-center;
-    .flag {
-      margin: auto;
-      padding-left: 1em;
-      width: 5em;
-    
-      .white {
-        background-color: white;
-        height: 1em;
-      }
-      .yellow {
-        background-color: rgb(255, 238, 48);
-        height: 1em;
-      }
-      .blue {
-        background-color: rgb(0, 0, 255);
-        height: 1em;
-      }
-    }
-    h1 { 
-      padding-left: 1em;
-      font-size: 1.3em;
-      flex: 1 1 0;
-      
+  nav {
+    margin-right: 3%;
 
-    }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
 
-    nav {
-      padding-right: 3em;
-      ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      
-        li {
-          display: inline;
-          margin: 0 15px;
+      li {
+        display: inline;
+        margin: 0 15px;
 
-          a {
-            text-decoration: none;
-            color: $secondary-color;
-            font-size: 17px;
-            font-weight: bold;
-
-            &:hover {
-              color: $secondary-color;
-            }
-          }
-        }
-
-        .donate_button {
-          margin: 0.5em;
-          padding: 12px 16px;
+        a {
+          text-decoration: none;
+          color: $secondary-color;
           font-size: 17px;
           font-weight: bold;
-          border-radius: 50px;
-          background-color: yellow;
-          border: none;
-          height: 50px;
 
+          &:hover {
+            color: $secondary-color;
+          }
         }
-
-
       }
 
+      .donate_button {
+        margin: 0.5em;
+        padding: 12px 16px;
+        font-size: 17px;
+        font-weight: bold;
+        border-radius: 50px;
+        background-color: yellow;
+        border: none;
+        height: 50px;
+      }
     }
-  
-     
   }
+
+  @media (min-width: 987px) {
+    padding: 1%;
+   
+  }
+
+
+}
