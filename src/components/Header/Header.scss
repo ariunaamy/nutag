@@ -9,62 +9,74 @@ header {
   width: 100vw;
   position: fixed;
   z-index: 1000;
-  display: flex; 
-  justify-content: space-between; 
-  align-items: center; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
- 
- 
-  
+
   .logo {
     margin-left: 3%;
     font-size: 1.5rem;
     font-weight: bold;
-   
-  }
-
-  nav {
-    margin-right: 3%;
-
-    ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-
-      li {
-        display: inline;
-        margin: 0 15px;
-
-        a {
-          text-decoration: none;
-          color: $secondary-color;
-          font-size: 17px;
-          font-weight: bold;
-
-          &:hover {
-            color: $secondary-color;
-          }
-        }
-      }
-
-      .donate_button {
-        margin: 0.5em;
-        padding: 12px 16px;
-        font-size: 17px;
-        font-weight: bold;
-        border-radius: 50px;
-        background-color: yellow;
-        border: none;
-        height: 50px;
-      }
-    }
   }
 
   @media (min-width: 987px) {
     padding: 1%;
-   
   }
 
-
+  #mobile-navigation {
+    .menu_icon {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      margin-right: 3%;
+      -webkit-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      div {
+        background-color: rgb(61, 61, 61);
+        position: relative;
+        width: 40px;
+        height: 5px;
+        margin-top: 7px;
+        // -webkit-transition: all 0.2s ease-in-out;
+        // transition: all 0.2s ease-in-out;
+      }
+    }
+  }
 }
+.dropdown {
+  position: relative;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  color: black;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  animation: slideDown 0.5s forwards;
+
+  a {
+    text-align: center;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+    &:hover {
+      background-color: #f1f1f1;
+    }
+  }
+
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+      display: none;
+    }
+    to {
+      transform: translateY(0);
+      display: block;
+    }
+  }
+}
+

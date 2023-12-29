@@ -13,7 +13,7 @@ const Main = () => {
         </h1>
         <div className="call_to_action">
           <button className="first">need help?</button>
-          <button className="second">Get Inovled</button>
+          <button className="second">Get Involved</button>
         </div>
       </div>
       <div className="image-wrapper">
