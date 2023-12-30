@@ -4,9 +4,6 @@ import { useState, useEffect } from "react";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  //   const toggleMenu = () => {
-  //     setIsMenuOpen(!isMenuOpen);
-
   useEffect(() => {
     let timer: number;
     if (isMenuOpen) {
@@ -17,22 +14,25 @@ const Header = () => {
     return () => clearTimeout(timer);
   }, [isMenuOpen]);
 
- 
   return (
     <header>
-        <h1 className="logo">Nutag Foundation</h1>
-        <div id="mobile-navigation">
-          <div className="menu_icon" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-            <div className="top"></div>
-            <div className="middle"></div>
-            <div className="bottom"></div>
-          </div>
-        </div>
+      <h1 className="logo">Nutag Foundation</h1>
+      <div className="menu_icon" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        <div className="top"></div>
+        <div className="middle"></div>
+        <div className="bottom"></div>
+      </div>
       {isMenuOpen && (
         <nav className="dropdown">
-          <a>About</a>
-          <a>Read</a>
-          <a>Donate</a>
+          <div className="menu">
+            <a>About</a>
+            <a>Read</a>
+            <a>How we help</a>
+          </div>
+          <button className="donate">
+            <img src="../../images/heart.png" alt="heart" />
+            Donate
+          </button>
         </nav>
       )}
     </header>

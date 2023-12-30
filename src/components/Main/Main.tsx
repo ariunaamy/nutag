@@ -7,7 +7,7 @@ const Main = () => {
         <h1>
           Helping
           <br />
-          <span>Indiginous People</span>
+          <span>Indigenous People</span>
           <br />
           of Siberia with resettlement
         </h1>

@@ -4,7 +4,10 @@ $secondary-color: #282828;
 $yellow: rgb(255, 238, 48);
 $blue: #8DB600;
 $font-base: 'Roboto', sans-serif;
-
 $font-header: 'Lora', serif;
 $base-font-size: 16px;
-
+$background-gradient: linear-gradient(
+    90deg,
+    #3d97b2 15%,
+    rgba(185, 225, 252, 1) 100%
+  );

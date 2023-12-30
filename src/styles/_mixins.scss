@@ -1,5 +1,27 @@
 @mixin flex-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin button-style {
+  justify-content: center;
+  width: 95%;
+  height: 48px;
+  margin: auto;
+  padding: 12px 16px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50px;
+  color: white;
+  height: 48px;
+  background: none;
+  border: 1.5px solid white;
+  &:hover {
+    background: linear-gradient(
+      90deg,
+      rgba(0, 88, 148, 1) 15%,
+      rgba(31, 173, 255, 1) 100%
+    );
   }
+}
