@@ -28,9 +28,17 @@ header {
   justify-content: space-between;
   align-items: center;
   .logo {
-    margin-left: 15px;
-    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    h1 {
+    font-size: 1.25rem;
     font-weight: bold;
+    }
+    
+    img {
+      width: 80px;
+      height: auto;
+    }
   }
 
   .hamburger-menu {

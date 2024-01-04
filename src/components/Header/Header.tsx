@@ -17,7 +17,10 @@ const Header = () => {
 
   return (
     <header>
-      <h1 className="logo">Nutag Foundation</h1>
+      <div className="logo">
+      <img src="../../images/yurt-logo.png" alt="yurt"/>
+      <h1>Nutag Foundation</h1>
+      </div>
       <label className="hamburger-menu">
         <input type="checkbox" />
       </label>
