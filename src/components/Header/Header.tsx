@@ -1,5 +1,6 @@
 import "./Header.scss";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,24 +18,22 @@ const Header = () => {
   return (
     <header>
       <h1 className="logo">Nutag Foundation</h1>
-      <div className="menu_icon" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-        <div className="top"></div>
-        <div className="middle"></div>
-        <div className="bottom"></div>
-      </div>
-      {isMenuOpen && (
+      <label className="hamburger-menu">
+        <input type="checkbox"/>
+      </label>
+      <aside className="sidebar">
         <nav className="dropdown">
           <div className="menu">
             <a>About</a>
             <a>Read</a>
             <a>How we help</a>
           </div>
-          <button className="donate">
+          <Link to="donate" className="donate">    
             <img src="../../images/heart.png" alt="heart" />
             Donate
-          </button>
+          </Link>      
         </nav>
-      )}
+        </aside>
     </header>
   );
 };

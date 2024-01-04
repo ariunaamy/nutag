@@ -1,16 +1,23 @@
 import React from 'react';
+import App from './App';
+import Error from './components/Error/Error';
 import ReactDOM from 'react-dom/client';
-import App from './App.tsx';
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
 import './index.css';
+import Donate from './components/Donate/Donate';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <App/>,
+    errorElement: <Error />,
+  },
+  {
+    path: "donate",
+    element: <Donate />,
   },
 ]);
 
@@ -18,6 +25,5 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <RouterProvider router={router}/>
-    {/* <App /> */}
   </React.StrictMode>,
 )
