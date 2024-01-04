@@ -90,6 +90,16 @@ main {
     @include flex-center;
     flex-direction: row;
     margin-top: 15%;
+    padding: 30px 60px;
+
+    #story {
+      .image-wrapper{
+        width: 700px;
+        padding: auto;
+          padding: 0;
+      }
+
+    }
 
     .hero {
       flex: 1;
