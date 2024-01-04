@@ -4,6 +4,15 @@
   justify-content: center;
 }
 
+@mixin title{
+  color: #15156e;
+}
+
+@mixin text {
+  color: #4f4f59;
+  font-size: 1.25rem;
+} 
+
 @mixin button-style {
   justify-content: center;
   width: 95%;

@@ -5,23 +5,20 @@ const Main = () => {
     <main>
       <div className="hero">
         <h1>
-          Helping
+          For <span>Indigenous Peoples</span>, Immigrants & Refugees
           <br />
-          <span>Indigenous People</span>
-          <br />
-          of Siberia with resettlement
         </h1>
         <div className="call_to_action">
           <button className="first">need help?</button>
           <button className="second">Get Involved</button>
         </div>
       </div>
-      <div className="image-wrapper">
-        <img
-          src="../../images/refugees.png"
-          alt="refugees"
-        />
-      </div>
+      <section id="story">
+        <h1>Dariso's Story</h1>
+        <div className="image-wrapper">
+          <img src="../../images/refugees.png" alt="refugees" />
+        </div>
+      </section>
     </main>
   );
 };
