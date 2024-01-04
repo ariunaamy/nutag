@@ -1,6 +1,7 @@
 @import "../styles/variables";
 
 body {
+  background: $background-gradient;
   margin: 0;
   width: 100vw;
   font-family: $font-header;

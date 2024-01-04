@@ -7,7 +7,7 @@ main {
   flex-direction: column;
   overflow: scroll;
   height: 100%;
-  color: white;
+  color: $font;
   margin-top: 70px;
 
   .hero {
@@ -17,7 +17,7 @@ main {
       font-size: 2.5rem;
       font-weight: 600;
       span {
-        color: #15156e;
+        color: #008a50;
       }
     }
     .call_to_action {
@@ -30,13 +30,18 @@ main {
         font-weight: bold;
         color: white;
         border-radius: 50px;
-        border: 1.5px solid white;
+        border: 1.5px solid $blue;
         height: 48px;
         background: linear-gradient(
           90deg,
           rgba(0, 88, 148, 1) 15%,
           rgba(31, 173, 255, 1) 100%
         );
+      }
+
+      button:hover {
+        background: #68ffc0;
+        color: $blue;
       }
 
       .first {
@@ -49,8 +54,7 @@ main {
         color: white;
         background: none;
         border: 1.5px solid white;
-      }
-      .second:hover {
+    
         background: rgb(0, 88, 148);
         background: linear-gradient(
           90deg,

@@ -18,8 +18,8 @@ const Main = () => {
       </div>
       <div className="image-wrapper">
         <img
-          src="https://kcls.bibliocommons.com/events/uploads/images/full/7464a4fb68fb878716ade9c25ce7ee9e/family-asian-diverse-buryat-mongoledit.jpg"
-          alt="main image"
+          src="../../images/refugees.png"
+          alt="refugees"
         />
       </div>
     </main>

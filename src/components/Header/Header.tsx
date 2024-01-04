@@ -19,21 +19,19 @@ const Header = () => {
     <header>
       <h1 className="logo">Nutag Foundation</h1>
       <label className="hamburger-menu">
-        <input type="checkbox"/>
+        <input type="checkbox" />
       </label>
       <aside className="sidebar">
-        <nav className="dropdown">
-          <div className="menu">
-            <a>About</a>
-            <a>Read</a>
-            <a>How we help</a>
-          </div>
-          <Link to="donate" className="donate">    
+        <nav className="menu">
+          <Link to="/">About</Link>
+          <Link to="/">Read</Link>
+          <Link to="/">How we help</Link>
+          <Link to="donate" className="donate-button">
             <img src="../../images/heart.png" alt="heart" />
             Donate
-          </Link>      
+          </Link>
         </nav>
-        </aside>
+      </aside>
     </header>
   );
 };
