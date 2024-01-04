@@ -5,6 +5,7 @@
 *::after,
 *::before {
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 :root {
@@ -30,11 +31,11 @@ header {
   .logo {
     display: flex;
     align-items: center;
-    h1 {
-    font-size: 1.25rem;
+// "nutag foundation text"
+    font-size: 0.6rem;
     font-weight: bold;
-    }
-    
+    color: $blue;
+    cursor: pointer;  
     img {
       width: 80px;
       height: auto;
@@ -48,7 +49,7 @@ header {
     gap: var(--hamburger-gap);
     position: absolute;
     top: 25px;
-    right: 5px;
+    right: 10px;
     z-index: 2;
     cursor: pointer;
 
@@ -86,7 +87,7 @@ header {
     content: "";
     width: 60px;
     height: 8px;
-    background-color: $blue;
+    background-color: $soft-blue;
     border-radius: 9999px;
     transform-origin: left center;
     transition: opacity var(--animation-timing), width var(--animation-timing),
@@ -125,12 +126,14 @@ header {
         display: block;
         &:hover {
           background-color: #128ad3;
+          color: white;
         }
       }
       .donate-button {
         text-decoration: none;
         margin-top: 3rem;
         @include button-style;
+        background-color: rgb(255, 255, 177);
         border-color: #128ad3;
         color: #128ad3;
         display: flex;

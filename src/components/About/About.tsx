@@ -6,7 +6,10 @@ const About = () => {
     <section id="about">
       {/* <h1>About</h1> */}
       <p>
-        <span>Nutag Foundation for Indigenous Peoples, Immigrants & Refugees (NFIPIR)</span>
+        <span>
+          Nutag Foundation for Indigenous Peoples, Immigrants & Refugees
+          (NFIPIR)
+        </span>{" "}
         was founded in response to a number of Indigenous Peoples and
         representatives of ethnic republics of Russia immigrating to the United
         States. There is a critical need to support these people as they begin
@@ -16,7 +19,7 @@ const About = () => {
         “small motherland”, “homeland” or “native land" from Buryat and
         Mongolian languages.
       </p>
-      <Link to="/">Learn More</Link>
+      <Link to="our_story">Learn More</Link>
     </section>
   );
 };

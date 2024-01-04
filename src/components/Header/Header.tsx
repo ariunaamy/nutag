@@ -17,16 +17,16 @@ const Header = () => {
 
   return (
     <header>
-      <div className="logo">
+      <a href="/" className="logo">
       <img src="../../images/yurt-logo.png" alt="yurt"/>
       <h1>Nutag Foundation</h1>
-      </div>
+      </a>
       <label className="hamburger-menu">
         <input type="checkbox" />
       </label>
       <aside className="sidebar">
         <nav className="menu">
-          <Link to="/">About</Link>
+          <a href="#about">About</a>
           <Link to="/">Read</Link>
           <Link to="/">How we help</Link>
           <Link to="donate" className="donate-button">

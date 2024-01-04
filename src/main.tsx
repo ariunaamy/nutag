@@ -8,6 +8,8 @@ import {
 } from "react-router-dom";
 import './index.css';
 import Donate from './components/Donate/Donate';
+import About from './components/About/About';
+import OurStory from './components/OurStory/OurStory';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +21,15 @@ const router = createBrowserRouter([
     path: "donate",
     element: <Donate />,
   },
+  {
+    path: "about",
+    element: <About />,
+  },
+  {
+    path: "our_story",
+    element: <OurStory/>,
+  },
+
 ]);
 
 
