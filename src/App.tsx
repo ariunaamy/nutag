@@ -1,13 +1,17 @@
-// import Header from "./components/Header/Header";
+
 import Main from "./components/Main/Main";
 import "./scss/App.scss";
-import PageLayout from "./components/PageLayout";
-
 import { Routes, Route } from "react-router-dom";
-import OurStory from "./components/OurStory/OurStory";
 
-// import { Routes, Route, Outlet, Link } from "react-router-dom";
-// import OurStory from "./components/OurStory/OurStory";
+// components
+import PageLayout from "./components/PageLayout";
+import OurStory from "./components/OurStory/OurStory";
+import Error from "./components/Error/Error";
+
+
+
+
+
 
 function App() {
   return (
@@ -16,6 +20,7 @@ function App() {
         <Route path="/" element={<PageLayout />}>
           <Route index element={<Main />} />
           <Route path="our_story" element={<OurStory />} />
+          <Route path="*" element={<Error/>} />
         </Route>
       </Routes>
     </>

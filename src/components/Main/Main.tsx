@@ -1,4 +1,5 @@
 import About from "../About/About";
+import ImageWithText from "../ImageWithText/ImageWithText";
 import "./Main.scss";
 
 const Main = () => {
@@ -10,15 +11,14 @@ const Main = () => {
           <br />
         </h1>
         <div className="call_to_action">
-          <button className="first">need help?</button>
-          <button className="second">Get Involved</button>
+          <button className="">need help?</button>
+          <button className="">Get Involved</button>
         </div>
       </div>
       <section id="story">
-        <h1>Dariso's Story</h1>
-        <div className="image-wrapper">
-          <img src="../../images/refugees.png" alt="refugees" />
-        </div>
+        <ImageWithText imageUrl="https://cdn.hourdetroit.com/wp-content/uploads/sites/20/2016/12/refugeeyouth-1.jpg"
+        altText="refugee"
+        overlayText="Meet Dariso: 'war made us leave'"/>
       </section>
       <About/>
     </main>
