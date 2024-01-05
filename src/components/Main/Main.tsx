@@ -1,3 +1,4 @@
+import About from "../About/About";
 import "./Main.scss";
 
 const Main = () => {
@@ -19,6 +20,7 @@ const Main = () => {
           <img src="../../images/refugees.png" alt="refugees" />
         </div>
       </section>
+      <About/>
     </main>
   );
 };
