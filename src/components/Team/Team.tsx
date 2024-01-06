@@ -2,23 +2,22 @@ import "./Team.scss";
 
 const Team = () => {
   return (
-    <div id="team">
+    <section id="team">
       <h1>Team</h1>
-      <section className="team">
-        <div className="box">
+      <div className="box">
+        <div className="image-wrapper">
           <img src="../../images/aryuna_livefree.jpg" />
-          <h1>Aryuna Radnaeva</h1>
         </div>
-        <div className="box">
-          <img src="../../images/aryuna_livefree.jpg" />
-          <h1>Aryuna Radnaeva</h1>
+        <div className="right-child">
+          <h1>
+            Aryuna
+            <br />
+            Radnaeva
+          </h1>
+          <p>Founder</p>
         </div>
-        <div className="box">
-          <img src="../../images/aryuna_livefree.jpg" />
-          <h1>Aryuna Radnaeva</h1>
-        </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
 
