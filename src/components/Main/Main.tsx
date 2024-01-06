@@ -10,6 +10,7 @@ const Main = () => {
          For Indigenous Peoples, Immigrants & Refugees
         </h1>
         <ul className="list">
+          
           <li>resettlement and integration</li>
           <li>diaspora development</li>
           <li>environmental initiatives</li>
