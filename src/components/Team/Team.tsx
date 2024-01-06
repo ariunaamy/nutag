@@ -10,9 +10,9 @@ const Team = () => {
         </div>
         <div className="right-child">
           <h1>
-            Aryuna
+            ARYUNA
             <br />
-            Radnaeva
+            RADNAEVA
           </h1>
           <p>Founder</p>
         </div>

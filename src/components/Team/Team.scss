@@ -5,7 +5,7 @@
   height: 100vh;
   margin-top: 100px;
   font-family: "Roboto", sans-serif;
-  color: $font;
+  background-color: rgb(237, 247, 255);
  
   h1 {
     text-align: center;
@@ -31,7 +31,7 @@
         width: 100%;
         object-fit: cover;
         border-radius: 5%;
-        box-shadow: rgba(0, 0, 0, 0.6) 0px 20px 40px -7px;
+        box-shadow: rgba(99, 121, 165, 0.6) 15px 20px 30px -7px;
         
       }
     }
@@ -48,11 +48,13 @@
         font-weight: 600;
         margin-bottom: 10px;
         text-align: left;
+        color: $dark-grey;
+     
       }
 
       p {
         margin-left: -3rem;
-        color: $blue;
+        color: $light-blue;
         font-size: 1rem;
         font-weight: 600;
         text-align: left;
