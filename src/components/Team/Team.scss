@@ -1,0 +1,25 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+#team {
+  margin-top: 100px;
+  width: 400px;
+  height: 100vw;
+  color: $blue;
+  gap: 3rem;
+
+  .box {
+    background-color: pink;
+    margin: 3rem;
+    height: 300px;
+    padding: 20px auto;
+
+    img {
+      border-radius: 100%;
+      width: 150px;
+      background: linear-gradient(145deg, #f0f0f0, #cacaca);
+      box-shadow: 8px 8px 15px #bebebe, -8px -8px 15px #ffffff;
+      border: 3px solid white;
+    }
+  }
+}

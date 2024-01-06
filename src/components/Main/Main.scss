@@ -7,17 +7,23 @@ main {
   flex-direction: column;
   overflow: scroll;
   height: 100%;
-  color: $font;
-  margin-top: 70px;
+  color: $blue;
+  margin-top: 10vh;
 
   .hero {
-    padding: 1rem;
+    padding: 0 1rem;
     text-align: left;
     h1 {
-      font-size: 2.5rem;
+      text-align: center;
+      font-size: 2rem;
       font-weight: 600;
-      span {
-        color: #008a50;
+    }
+    .list {
+      font-size: 1.5rem;
+      display: grid;
+      grid-template-columns: 2 1fr;
+      li {
+        text-align: center;
       }
     }
     .call_to_action {
@@ -29,6 +35,9 @@ main {
    
       button {
         @include button-style;
+        border-color: $blue;
+      
+
         // padding: 12px 16px;
         // font-size: 18px;
         // font-weight: bold;
@@ -51,7 +60,7 @@ main {
     }
   }
 
-  #story {
+  #story-image {
     height: fit-content;
     // background-color: $blue;
     // font-family: Arial, Helvetica, sans-serif;

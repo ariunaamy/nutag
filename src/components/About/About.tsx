@@ -7,8 +7,7 @@ const About = () => {
       {/* <h1>About</h1> */}
       <p>
         <span>
-          Nutag Foundation for Indigenous Peoples, Immigrants & Refugees
-          (NFIPIR)
+          NFIPIR
         </span>{" "}
         was founded in response to a number of Indigenous Peoples and
         representatives of ethnic republics of Russia immigrating to the United

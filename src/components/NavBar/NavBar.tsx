@@ -1,10 +1,13 @@
-import "./Header.scss";
+import "./NavBar.scss";
 import { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 
-const Header = () => {
+const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [show, setShow] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
+// close navbar timer 
   useEffect(() => {
     let timer: number;
     if (isMenuOpen) {
@@ -15,8 +18,35 @@ const Header = () => {
     return () => clearTimeout(timer);
   }, [isMenuOpen]);
 
+ // navbar on scroll 
+
+ useEffect(() => {
+  if (typeof window !== 'undefined') {
+    window.addEventListener('scroll', controlNavbar);
+    return () => {
+      window.removeEventListener('scroll', controlNavbar);
+    };
+  }
+}, [lastScrollY]);
+
+
+  const controlNavbar = () => {
+    if (typeof window !== 'undefined') {
+      if (window.scrollY > lastScrollY) { 
+        setShow(false);
+      } else { 
+        setShow(true);
+        setIsMenuOpen(false);
+      }
+      setLastScrollY(window.scrollY);
+    }
+  };
+
+
+
+
   return (
-    <header>
+    <div className={`navbar ${show ? 'active' : 'hidden'}`}>
       <a href="/" className="logo">
       <img src="../../images/yurt-logo.png" alt="yurt"/>
       <h1>Nutag Foundation</h1>
@@ -24,7 +54,7 @@ const Header = () => {
       <label className="hamburger-menu">
         <input type="checkbox" />
       </label>
-      <aside className="sidebar">
+      <aside className="dropdown">
         <nav className="menu">
           <a href="#about">About</a>
           <Link to="/">Read</Link>
@@ -35,7 +65,7 @@ const Header = () => {
           </Link>
         </nav>
       </aside>
-    </header>
+    </div>
   );
 };
-export default Header;
+export default NavBar;

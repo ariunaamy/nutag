@@ -1,17 +1,40 @@
+@import "./variables";
 @mixin flex-center {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+@mixin absolute-center {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
-@mixin title{
+@mixin center {
+  display: grid;
+  place-items: center; /* Centers both vertically and horizontally */
+  height: 100vh; /* Example height */
+}
+
+@mixin vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin horizotal-center {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin title {
   color: #15156e;
 }
 
 @mixin text {
   color: #4f4f59;
   font-size: 1.25rem;
-} 
+}
 
 @mixin button-style {
   padding: 12px 16px;
@@ -20,9 +43,39 @@
   border-radius: 10px;
   color: $blue;
   background: none;
-  border: 1px solid $blue;
+  border: 1px solid pink;
   &:hover {
     color: $blue;
   }
 }
 
+@mixin neo-button {
+  border-radius: 13px;
+  background: linear-gradient(145deg, #ffe8e4, #fff4dc);
+  box-shadow: 4px 4px 4px #131765, -3px -3px 12px #ffdcd4;
+  
+}
+
+@mixin text-box {
+  padding: 2rem 2rem;
+  // background-color: rgb(234, 255, 239);
+  h1 {
+    @include title;
+    text-align: center;
+  }
+  p {
+    @include text;
+
+    span {
+      font-weight: 600;
+      color: rgb(49, 22, 3);
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: $slate-blue;
+    font-size: 1.25rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
