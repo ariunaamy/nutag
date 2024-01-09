@@ -1,6 +1,8 @@
+import "./Donate.scss";
+
 const Donate = () => {
     return (
-        <div className="donate">
+        <div id="donate">
             <div className="donate__container">
                 <div className="donate__container__content">
                     <div className="donate__container__content__text">
@@ -11,9 +13,6 @@ const Donate = () => {
                             Mongolia.
                         </p>
                         <button>Donate</button>
-                    </div>
-                    <div className="donate__container__content__image">
-                        <img src="../../images/donate.png" alt="donate" />
                     </div>
                 </div>
             </div>

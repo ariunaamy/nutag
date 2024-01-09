@@ -8,29 +8,13 @@
   text-decoration: none;
 }
 
-:root {
-  --bar-width: 40px;
-  --bar-height: 8px;
-  --hamburger-gap: 6px;
-  --animation-timing: 200ms ease-in-out;
-  --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
-}
 
-.navbar.active {
+#nav-bar {
   top: 0;
-}
-
-.navbar.hidden {
-  top: -100%;
-  /* Adjust this value based on the height of your navbar */
-}
-
-.navbar {
   transition: top 0.3s;
   background-color: rgb(255, 255, 255);
   height: 80px;
   font-family: $font-base;
-  top: 0;
   width: 100vw;
   position: fixed;
   z-index: 1;
@@ -50,64 +34,15 @@
     }
   }
 
-  .hamburger-menu {
-    --x-width: calc(var(--hamburger-height) * 1.41421356237);
-    display: flex;
-    flex-direction: column;
-    gap: var(--hamburger-gap);
-    position: absolute;
-    top: 25px;
-    right: 10px;
-    z-index: 2;
-    cursor: pointer;
-
-    input {
-      height: var(--hamburger-height);
-      width: var(--bar-width);
-      appearance: none;
-      outline: none;
-      pointer-events: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    input:checked {
-      opacity: 0;
-      width: 0;
-    }
+  .hamburger-icon {
+    color: black;
   }
-
-  .hamburger-menu:has(input:checked)::before {
-    rotate: 45deg;
-    width: var(--x-width);
-    translate: 0 calc(var(--bar-height) / -2);
-  }
-
-  .hamburger-menu:has(input:checked)::after {
-    rotate: -45deg;
-    width: var(--x-width);
-    translate: 0 calc(var(--bar-height) / 2);
-  }
-
-  .hamburger-menu::before,
-  .hamburger-menu::after,
-  .hamburger-menu input {
-    content: "";
-    width: 60px;
-    height: 8px;
-    background-color: $slate-blue;
-    border-radius: 9999px;
-    transform-origin: left center;
-    transition: opacity var(--animation-timing), width var(--animation-timing),
-      rotate var(--animation-timing), translate var(--animation-timing),
-      background-color var(--animation-timing);
+  .close-icon {
+    margin-right: 18px;
   }
 
   .dropdown {
-    transform: translateY(-10%);
-    transition: transform 0.5s ease, visibility 0s 0.5s, opacity 0.5s ease;
-    visibility: hidden;
-    opacity: 0;
+    // transition: transform 0.5s ease, visibility 0s 0.5s, opacity 0.5s ease;
     position: fixed;
     padding-top: 1.25rem;
     padding-bottom: 1rem;
@@ -140,7 +75,7 @@
         text-decoration: none;
         margin-top: 3rem;
         @include button-style;
-       @include neo-button;
+        @include neo-button;
         border-color: rgb(235, 119, 138);
         color: $blue;
         display: flex;
@@ -153,13 +88,6 @@
         }
       }
     }
-  }
-
-  .hamburger-menu:has(input:checked) + .dropdown {
-    transform: translateY(0);
-    visibility: visible;
-    opacity: 1;
-    transition-delay: 0s;
   }
 }
 

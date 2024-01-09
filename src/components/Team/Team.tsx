@@ -3,7 +3,8 @@ import "./Team.scss";
 const Team = () => {
   return (
     <section id="team">
-      <h1>Team</h1>
+      <h1 className="title">Our Team</h1>
+      <div className="box-container">
       <div className="box">
         <div className="image-wrapper">
           <img src="../../images/aryuna_livefree.jpg" />
@@ -14,9 +15,12 @@ const Team = () => {
             <br />
             RADNAEVA
           </h1>
-          <p>Founder</p>
+          <h2>Founder</h2>
         </div>
       </div>
+
+      </div>
+      
     </section>
   );
 };

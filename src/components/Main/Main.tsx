@@ -4,17 +4,18 @@ import "./Main.scss";
 
 const Main = () => {
   return (
-    <main>
+    <main id="main">
       <div className="hero">
         <h1>
          For Indigenous Peoples, Immigrants & Refugees
         </h1>
-        <ul className="list">
-          
+        <div className="list">
+        <ul>
           <li>resettlement and integration</li>
           <li>diaspora development</li>
           <li>environmental initiatives</li>
         </ul>
+        </div>    
         <div>
         <section id="story-image">
           <ImageWithText

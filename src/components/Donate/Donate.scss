@@ -1,0 +1,8 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+#donate {
+    margin-top: 80px;
+    height: 100vh;
+    @include text-box;
+}
