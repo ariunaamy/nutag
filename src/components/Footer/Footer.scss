@@ -1,7 +1,31 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
 #footer {
     color: black;
-    display: flex;
-    background-color: white;
+    background-color: hsl(18, 32%, 39%);
     height: 100vh;
-   
+    .subscribe {
+        padding: 3rem 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        input {
+            --tw-border-opacity: 1;
+            height: 2rem;
+            background: none;
+            border: 1.5px solid white; 
+            
+           
+        }
+
+        button {
+            border: none;
+            font-size: 1rem;
+            height: 2rem;
+            color: $brown;
+            background-color: rgb(218, 203, 203);
+        }
+    }
 }

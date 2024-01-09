@@ -9,14 +9,8 @@ const Main = () => {
         <h1>
          For Indigenous Peoples, Immigrants & Refugees
         </h1>
-        <div className="list">
-        <ul>
-          <li>resettlement and integration</li>
-          <li>diaspora development</li>
-          <li>environmental initiatives</li>
-        </ul>
-        </div>    
-        <div>
+           
+      
         <section id="story-image">
           <ImageWithText
             imageUrl="https://cdn.hourdetroit.com/wp-content/uploads/sites/20/2016/12/refugeeyouth-1.jpg"
@@ -28,8 +22,15 @@ const Main = () => {
           <button className="">need help?</button>
           <button className="">Get Involved</button>
         </div>
+        <div className="list">
+        <ul>
+          <li>resettlement and integration</li>
+          <li>diaspora development</li>
+          <li>environmental initiatives</li>
+        </ul>
+        </div> 
 
-        </div>
+      
         
       </div>
       <About />

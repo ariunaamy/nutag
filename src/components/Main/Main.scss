@@ -43,7 +43,8 @@
       button {
         @include button-style;
         border-radius: 15px;
-        border-color: $blue;
+        border-color: $brown;
+        color: $brown;
 
         // padding: 12px 16px;
         // font-size: 18px;
